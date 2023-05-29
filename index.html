@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversários</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <section class="conteudo" data-conteudoPagina>
+        <h1 class="tituloPagina">CADASTRO DE PESSOAS</h1>
+        <form id="formulario">
+            <div class="formCampo">
+                <label for="name" class="tituloCampo">Insira o nome:</label>
+                <input type="text" placeholder="Apenas letras, mínimo de 3 caracteres e máximo 120." maxlength="120" minlength="3" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" class="formCampoNome" id="name" required>
+            </div>
+            <div class="formCampo">
+                <label for="data" class="tituloCampo">Insira a data de nascimento:</label>
+                <input type="date" class="formCampoData" id="data" formtarget="" required>
+            </div>
+            <div class="formBotao">
+                <button class="botaoSalvar" data-botaoSalvar>Salvar</button>
+            </div>
+        </form>
+    </section>
+
+    <table class="tabelaDeItens" data-tabelaDeItens>
+        <tr>
+            <td class="tableTitle">Nome</td>
+            <td class="tableTitle">Data de nascimento</td>
+            <td class="tableTitle">Ações</td>
+        </tr>
+    </table>
+
+    <script src="app/main.js"></script>
+</body>
+</html>
